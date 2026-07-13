@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/snark-a-tects/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Snark-A-Tects — AI Statement Tees · Free Worldwide Shipping</title>
+<meta name="description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful." />
+<meta property="og:title" content="Snark-A-Tects — AI Statement Tees · Free Worldwide Shipping" />
+<meta property="og:description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Snark-A-Tects — AI Statement Tees · Free Worldwide Shipping" />
+<meta name="twitter:description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful." />
+<!-- End SEO Meta Tags -->
+<meta name="sheet-data-url" content="https://paymegpt.com/api/public/landing-pages/4373/sheet-data">
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mpo7b016-p10e6";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-gate>
+(function(){
+  var slug='lp-mpo7b016-p10e6';var apiBase='https://paymegpt.com';var currency='USD';var presets=[2500,5000,10000,25000];var minAmt=100;var maxAmt=1000000;var thankYouMsg='Thank you!';
+  var successSubtext='Your donation has been processed successfully.';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function getLang(){var l=(document.documentElement.lang||navigator.language||'en').toLowerCase();return l.split('-')[0];}
+  function getLocale(){return (document.documentElement.lang||navigator.language||'en');}
+  var I18N={en:{min:'Minimum is ',max:'Maximum is ',emailPrompt:'Enter your email for the receipt:',emailRequired:'An email address is required to complete checkout.',failed:'Failed to process donation'},fr:{min:'Le minimum est ',max:'Le maximum est ',emailPrompt:'Entrez votre adresse e-mail pour le reçu :',emailRequired:'Une adresse e-mail est requise pour finaliser le paiement.',failed:'Échec du traitement du don'},es:{min:'El mínimo es ',max:'El máximo es ',emailPrompt:'Introduce tu correo electrónico para el recibo:',emailRequired:'Se requiere una dirección de correo electrónico para completar el pago.',failed:'No se pudo procesar la donación'},pt:{min:'O mínimo é ',max:'O máximo é ',emailPrompt:'Insira seu e-mail para o recibo:',emailRequired:'Um endereço de e-mail é necessário para concluir o pagamento.',failed:'Falha ao processar a doação'},de:{min:'Mindestbetrag ist ',max:'Höchstbetrag ist ',emailPrompt:'Geben Sie Ihre E-Mail-Adresse für die Quittung ein:',emailRequired:'Eine E-Mail-Adresse ist erforderlich, um den Checkout abzuschließen.',failed:'Spende konnte nicht verarbeitet werden'},it:{min:'Il minimo è ',max:'Il massimo è ',emailPrompt:'Inserisci la tua email per la ricevuta:',emailRequired:"È richiesto un indirizzo email per completare il pagamento.",failed:'Impossibile elaborare la donazione'}};
+  function t(k){var L=getLang();return (I18N[L]&&I18N[L][k])||I18N.en[k];}
+  function fmtD(c){try{return new Intl.NumberFormat(getLocale(),{style:'currency',currency:currency}).format(c/100);}catch(e){return new Intl.NumberFormat('en-US',{style:'currency',currency:currency}).format(c/100);}}
+  function findDonEmail(){var ids=['email','emailAddress','buyer-email','buyerEmail','donor-email','donorEmail','user-email','userEmail','contact-email'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.indexOf('@')>-1)return el.value.trim();}var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.indexOf('@')>-1)return inputs[j].value.trim();}return '';}
+  function findDonName(){var ids=['name','fullName','full-name','donor-name','donorName','customer-name','user-name'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"])');for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}return '';}
+  function findDonPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  window.__processDonation=function(a,b,c,d){
+    var amountCents,email='',donorName='',donorMessage='',productName='',productDescription='',quantity=1;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents||(a.amount?Math.round(Number(a.amount)*100):0);
+      email=a.email||'';
+      productName=a.productName||a.label||'';
+      productDescription=a.productDescription||a.description||'';
+      donorName=a.name||a.donorName||'';
+      donorMessage=a.message||a.donorMessage||'';
+      quantity=a.quantity&&parseInt(a.quantity,10)>0?parseInt(a.quantity,10):1;
+    }else{
+      amountCents=typeof a==='number'?a:(parseInt(a,10)||0);
+      var rest=[b,c,d];var nonEmail=[];
+      for(var i=0;i<rest.length;i++){var v=rest[i];if(typeof v==='string'&&v){if(!email&&v.indexOf('@')>-1&&/^[^s@]+@[^s@]+.[^s@]+$/.test(v.trim())){email=v.trim();}else{nonEmail.push(v);}}}
+      donorName=nonEmail[0]||'';donorMessage=nonEmail[1]||'';
+    }
+    if(!email)email=findDonEmail();
+    if(!donorName)donorName=findDonName();
+    var donorPhone=findDonPhone();
+    if(!amountCents||amountCents<minAmt){alert(t('min')+fmtD(minAmt));return Promise.reject('below_min');}
+    if(amountCents>maxAmt){alert(t('max')+fmtD(maxAmt));return Promise.reject('above_max');}
+    if(!email){var p=window.prompt(t('emailPrompt'),'');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert(t('emailRequired'));return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/donation/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:donorName||'',phone:donorPhone||'',amountCents:amountCents,message:donorMessage||'',productName:productName||'',productDescription:productDescription||'',quantity:quantity,locale:getLocale(),successUrl:successBase+'?donation=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?donation=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||t('failed'));throw new Error(d.error);}
+    });
+  };
+  window.__donationConfig={currency:currency,presets:presets.map(function(c){return c/100;}),minAmount:minAmt/100,maxAmount:maxAmt/100,formatAmount:fmtD};
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('donation')==='success'){
+      var sidD=urlParams.get('session_id');
+      if(sidD){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidD})}).catch(function(){});}catch(e){}}
+      var overlay=document.createElement('div');overlay.id='donation-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">'+esc(thankYouMsg)+'</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(successSubtext)+'</p><button id="lp-don-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var dBtn=document.getElementById('lp-don-success-btn');
+      if(dBtn){dBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4373');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='gpDSrzn';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='gpDSrzn';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav data-section="nav">
+  <div class="nav-logo-wrap">
+    <div style="font-family:'Black Han Sans',sans-serif;font-size:1.4rem;letter-spacing:0.08em;color:var(--white);text-transform:uppercase;line-height:1;">Snark-A-Tects</div>
+    <div class="nav-divider"></div>
+    <div class="nav-tagline">AI Statement Tees<br>Free Worldwide Shipping</div>
+  </div>
+  <button class="cart-btn" onclick="openCart()">Cart (<span id="cart-count">0</span>)</button>
+</nav>
+<section class="hero" data-section="hero">
+  <div class="hero-left">
+    <div>
+      <div class="hero-eyebrow">New Drop · Free Worldwide Shipping · Printed by Printful</div>
+      <h1 class="hero-title"><span class="solid">Wear</span><span class="accent">What You</span><span class="solid">Think.</span></h1>
+      <p class="hero-sub">Bold AI-era statement tees for the people who actually get it. No fluff. No corporate speak. No shipping fees — ever. Just the truth on cotton.</p>
+      <div class="hero-shipbadge">✦ Free Shipping Worldwide ✦</div>
+    </div>
+  </div>
+  <div class="hero-right"><img src="https://paymegpt.com/objects/quick-uploads/7/7cf9fa048392e148.jpg" alt="Snark-A-Tects Logo"></div>
+</section>
+<div class="marquee-wrap" data-section="marquee"><div class="marquee-track"><span class="marquee-item">Free Shipping Worldwide <span class="marquee-sep">✦</span></span><span class="marquee-item">Statement Tees <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping <span class="marquee-sep">✦</span></span><span class="marquee-item">AI Humour Done Right <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping Worldwide <span class="marquee-sep">✦</span></span><span class="marquee-item">Unisex Fit <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping <span class="marquee-sep">✦</span></span><span class="marquee-item">Wear Your Opinions <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping Worldwide <span class="marquee-sep">✦</span></span><span class="marquee-item">Statement Tees <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping <span class="marquee-sep">✦</span></span><span class="marquee-item">AI Humour Done Right <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping Worldwide <span class="marquee-sep">✦</span></span><span class="marquee-item">Unisex Fit <span class="marquee-sep">✦</span></span><span class="marquee-item">Free Shipping <span class="marquee-sep">✦</span></span><span class="marquee-item">Wear Your Opinions <span class="marquee-sep">✦</span></span></div></div>
+<div class="main-layout" data-section="products">
+  <aside class="sidebar">
+    <div class="sidebar-head">// Filter</div>
+    <div class="sidebar-filters" id="filter-btns"><button class="filter-btn active" onclick="setFilter('all',this)">All Products</button></div>
+    <div class="sidebar-note">Unisex fit · Ring-spun cotton<br>Printed on-demand via<br>Printful<br><br>★ FREE SHIPPING ★<br>Worldwide · Tracked<br>No fees at checkout</div>
+  </aside>
+  <div class="products-area">
+    <div class="products-header"><div class="products-label">// All Products</div><div class="products-count" id="products-count">Loading…</div></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</div>
+<div class="overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-img-col"><img class="modal-img" id="modal-img" src="" alt=""></div>
+    <div class="modal-body">
+      <div class="modal-tag" id="modal-tag">Apparel</div>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <div class="modal-price" id="modal-price"></div>
+      <div class="modal-ship">✦ Free Worldwide Shipping</div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div id="colour-block">
+        <div class="picker-label">Colour</div>
+        <div class="colour-label" id="colour-name-label">–</div>
+        <div class="colour-row" id="colour-row"></div>
+      </div>
+      <div class="picker-label" id="size-label">Size</div>
+      <div class="size-grid" id="size-grid"></div>
+      <div class="picker-label">Quantity</div>
+      <div class="qty-row">
+        <button class="qty-btn" onclick="changeQty(-1)">−</button>
+        <span class="qty-val" id="qty-val">1</span>
+        <button class="qty-btn" onclick="changeQty(1)">+</button>
+      </div>
+      <button class="add-btn" id="add-btn" onclick="addToCart()">Select a Size</button>
+      <div class="buy-note">Secure checkout · <strong>Free shipping worldwide</strong> — the price you see is the price you pay</div>
+    </div>
+  </div>
+</div>
+<div class="ship-overlay" id="ship-overlay">
+  <div class="ship-modal">
+    <div class="ship-title">Almost There</div>
+    <div class="ship-sub">// Email + shipping address · Shipping is FREE worldwide</div>
+    <input type="email" id="email" class="ship-input" placeholder="your@email.com" oninput="validateCheckout()" required>
+    <select class="ship-select" id="country-select" onchange="validateCheckout()">
+      <option value="">— Select your country —</option>
+      <option value="US">United States</option><option value="CA">Canada</option><option value="AU">Australia</option><option value="GB">United Kingdom</option><option value="DE">Germany</option><option value="FR">France</option><option value="NL">Netherlands</option><option value="SE">Sweden</option><option value="NO">Norway</option><option value="DK">Denmark</option><option value="IT">Italy</option><option value="ES">Spain</option><option value="JP">Japan</option><option value="NZ">New Zealand</option><option value="SG">Singapore</option><option value="OTHER">Other country</option>
+    </select>
+    <div class="ship-breakdown" id="ship-breakdown">
+      <div class="ship-row"><span>Products</span><span id="sb-products">—</span></div>
+      <div class="ship-row"><span>Shipping</span><span class="free">FREE ✦</span></div>
+      <div class="ship-row total"><span>Total</span><span id="sb-total">—</span></div>
+    </div>
+    <div class="ship-address-label" style="font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--purple-bright);margin-bottom:1rem;">// Shipping address</div>
+    <div class="ship-2col">
+      <input type="text" id="ship-firstname" class="ship-input" placeholder="First name" oninput="validateCheckout()">
+      <input type="text" id="ship-lastname" class="ship-input" placeholder="Last name" oninput="validateCheckout()">
+    </div>
+    <input type="text" id="ship-address" class="ship-input" placeholder="Street address" oninput="validateCheckout()">
+    <div class="ship-2col">
+      <input type="text" id="ship-city" class="ship-input" placeholder="City" oninput="validateCheckout()">
+      <input type="text" id="ship-state" class="ship-input" placeholder="State / Province">
+    </div>
+    <input type="text" id="ship-zip" class="ship-input" placeholder="Postal / ZIP code" oninput="validateCheckout()">
+    <input type="tel" id="ship-phone" class="ship-input" placeholder="Phone (optional)">
+    <div class="ship-actions">
+      <button class="ship-cancel" onclick="closeShipping()">← Back to Cart</button>
+      <button class="ship-go" id="ship-go-btn" onclick="proceedToCheckout()" disabled>Pay Now — Free Shipping</button>
+    </div>
+  </div>
+</div>
+<div class="cart-overlay" id="cart-overlay">
+  <div class="cart-backdrop" onclick="closeCart()"></div>
+  <div class="cart-panel">
+    <div class="cart-header"><div class="cart-header-title">// Your Cart</div><button class="cart-close" onclick="closeCart()">✕</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-freeship">✦ Free shipping on every order ✦</div>
+      <div class="cart-subtotal"><span>Total (shipping included)</span><span id="cart-subtotal-val">$0.00</span></div>
+      <button class="checkout-btn" id="checkout-btn" onclick="openShipping()" disabled>Checkout</button>
+      <button class="keep-shopping" onclick="closeCart()">← Keep Shopping</button>
+    </div>
+  </div>
+</div>
+<footer data-section="footer">
+  <div class="footer-col"><div class="footer-label">Snark-A-Tects</div><div class="footer-text">AI Statement Tees<br>Free Worldwide Shipping<br>© 2026 · All Rights Reserved</div></div>
+  <div class="footer-col"><div class="footer-label">Fulfillment</div><div class="footer-text">Printed by Printful<br>FREE shipping · Tracked worldwide<br>No surprise fees at checkout</div></div>
+  <div class="footer-col"><div class="footer-label">The Vibe</div><div class="footer-text">Made for people who<br>actually understand<br>what's happening.</div></div>
+</footer>
+<script>
+const SHEET_URL='https://paymegpt.com/api/public/landing-pages/4373/sheet-data';
+const WEBHOOK_URL='https://paymegpt.com/api/webhooks/flow/3970/3a4bec0dcfc8728f83b67352b9ae1d922caad0fed594fb95b95af5067e97ef3c';
+const COLOUR_HEX={'Black':'#1a1a1a','Heather Purple':'#7b68a8','Heather Royal':'#4169b0','Heather Red':'#b84040','Sapphire':'#1b5a8c','Heather Sapphire':'#3a6ea0','Kelly Green':'#3a8c3a','Navy':'#1c2d5a','Heather Navy':'#2c3e6b','Irish Green':'#2a7a3a','Forest Green':'#1f4d2e','Orange':'#cc6020','Red':'#b03030','Purple':'#5b3a8c','Royal':'#2a52be','Heliconia':'#d6407e','White':'#f5f5f5','Heather Grey':'#9a9a9a','Cherry Red':'#a01830','Default':'#7b35d4'};
+const SIZE_ORDER=['XS','S','M','L','XL','2XL','3XL','4XL','5XL','2" × 2"','3" × 3"','4" × 4"','6" × 6"','OSFA','One Size'];
+const SIZE_TOKENS=new Set(SIZE_ORDER.map(s=>s.toUpperCase()));
+const SKIP_NAMES=['test tshirt','copy of','unisex classic tee copy','test with mockups'];
+let products=[],currentProduct=null,selectedColour=null,selectedSize=null,activeFilter='all';
+let cart=JSON.parse(localStorage.getItem('sat_cart_v2')||'[]');
+
+function sortSizes(sizes){return[...sizes].sort((a,b)=>{const ai=SIZE_ORDER.findIndex(s=>s.toUpperCase()===a.toUpperCase());const bi=SIZE_ORDER.findIndex(s=>s.toUpperCase()===b.toUpperCase());if(ai===-1&&bi===-1)return a.localeCompare(b);if(ai===-1)return 1;if(bi===-1)return -1;return ai-bi;});}
+function looksLikeSize(t){return SIZE_TOKENS.has(t.toUpperCase())||/["×x]/.test(t);}
+
+function groupRows(rows){
+  const map=new Map();
+  rows.forEach(row=>{
+    const rawName=(row['Name']||'').trim();
+    if(!rawName)return;
+    if(SKIP_NAMES.some(s=>rawName.toLowerCase().startsWith(s)))return;
+    if((row['In Stock']||'Yes').trim().toLowerCase()==='no')return;
+    const parts=rawName.split(' / ').map(p=>p.trim());
+    const base=parts[0];
+    let colour=null,size=null;
+    if(parts.length>=3){colour=parts[1];size=parts[2];}
+    else if(parts.length===2){if(looksLikeSize(parts[1]))size=parts[1];else colour=parts[1];}
+    const price=parseFloat(row['Price']||'0')||0;
+    const variant={colour,size,price,sku:(row['SKU']||'').trim(),img:(row['Image URL']||'').trim()};
+    if(!map.has(base)){map.set(base,{name:base,category:'',description:'',variants:[]});}
+    const p=map.get(base);
+    p.variants.push(variant);
+    if(!p.category&&(row['Custom Category']||row['Category']||'').trim())p.category=(row['Custom Category']||row['Category']||'').trim();
+    if(!p.description&&(row['Custom Description']||row['Description']||'').trim())p.description=(row['Custom Description']||row['Description']||'').trim();
+  });
+  const out=[];
+  map.forEach(p=>{
+    p.colours=[...new Set(p.variants.map(v=>v.colour).filter(Boolean))];
+    p.sizes=sortSizes([...new Set(p.variants.map(v=>v.size).filter(Boolean))]);
+    p.colourImg={};
+    p.variants.forEach(v=>{if(v.colour&&v.img&&!p.colourImg[v.colour])p.colourImg[v.colour]=v.img;});
+    p.mainImg=(p.variants.find(v=>v.img)||{}).img||'';
+    const prices=p.variants.map(v=>v.price).filter(n=>n>0);
+    p.minPrice=prices.length?Math.min(...prices):0;
+    p.maxPrice=prices.length?Math.max(...prices):0;
+    if(p.variants.length)out.push(p);
+  });
+  return out;
+}
+function findVariant(p,colour,size){
+  return p.variants.find(v=>(v.colour||null)===(colour||null)&&(v.size||null)===(size||null))
+      || p.variants.find(v=>(!v.colour||v.colour===colour)&&v.size===size)
+      || null;
+}
+function priceLabel(p){return p.minPrice===p.maxPrice?`$${p.minPrice.toFixed(2)} USD`:`From $${p.minPrice.toFixed(2)} USD`;}
+
+function renderGrid(){
+  const grid=document.getElementById('grid');
+  const filtered=activeFilter==='all'?products:products.filter(p=>(p.category||'').toLowerCase()===activeFilter);
+  document.getElementById('products-count').textContent=`${filtered.length} item${filtered.length!==1?'s':''} · Free shipping on everything`;
+  if(!filtered.length){grid.innerHTML='<div style="padding:3rem;color:var(--white-dimmer);font-size:0.75rem;grid-column:1/-1;font-family:\'Space Mono\',monospace">No products found.</div>';return;}
+  grid.innerHTML=filtered.map(p=>{
+    const pi=products.indexOf(p);
+    const pills=p.colours.length>0?`<div class="colour-pills">${p.colours.slice(0,8).map((c,ci)=>`<span class="cpill${ci===0?' active':''}" style="background:${COLOUR_HEX[c]||COLOUR_HEX['Default']}" title="${c}" onclick="event.stopPropagation();cardColour(${pi},${ci},'${c.replace(/'/g,"\\'")}')"></span>`).join('')}</div>`:'';
+    return`<div class="card" onclick="openModal(${pi})"><div class="card-img-wrap"><img class="card-img" id="cimg-${pi}" src="${p.mainImg}" alt="${p.name}" loading="lazy"><span class="freeship-badge">Free Ship</span>${pills}<div class="card-overlay"><span class="card-overlay-cta">View Options →</span></div></div><div class="card-info"><div class="card-name">${p.name}</div><div class="card-price">${priceLabel(p)}</div><div class="card-ship">✦ Free worldwide shipping</div></div></div>`;
+  }).join('');
+}
+function cardColour(pi,ci,c){
+  const p=products[pi];
+  const img=document.getElementById(`cimg-${pi}`);
+  if(img&&p.colourImg[c])img.src=p.colourImg[c];
+  img.closest('.card-img-wrap').querySelectorAll('.cpill').forEach((el,i)=>el.classList.toggle('active',i===ci));
+}
+function setFilter(val,btn){activeFilter=val;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderGrid();}
+function buildFilters(){const cats=[...new Set(products.map(p=>p.category).filter(Boolean))];const wrap=document.getElementById('filter-btns');cats.forEach(cat=>{const btn=document.createElement('button');btn.className='filter-btn';btn.textContent=cat;btn.onclick=function(){setFilter(cat.toLowerCase(),this);};wrap.appendChild(btn);});}
+
+function openModal(pi){
+  currentProduct=products[pi];
+  selectedColour=currentProduct.colours[0]||null;
+  selectedSize=null;
+  document.getElementById('modal-tag').textContent=currentProduct.category||'Apparel';
+  document.getElementById('modal-title').textContent=currentProduct.name;
+  document.getElementById('modal-price').textContent=priceLabel(currentProduct);
+  document.getElementById('modal-desc').textContent=currentProduct.description||'Bold AI-era statement piece. Printed on demand. Free shipping worldwide.';
+  document.getElementById('colour-block').style.display=currentProduct.colours.length?'block':'none';
+  document.getElementById('qty-val').textContent='1';
+  renderModalImage();renderColourPicker();renderSizePicker();updateAddBtn();
+  document.getElementById('modal-overlay').classList.add('open');document.body.style.overflow='hidden';
+}
+function renderModalImage(){
+  const img=document.getElementById('modal-img');
+  img.src=(selectedColour&&currentProduct.colourImg[selectedColour])||currentProduct.mainImg;
+  img.alt=currentProduct.name;
+}
+function renderColourPicker(){
+  document.getElementById('colour-row').innerHTML=currentProduct.colours.map(c=>`<span class="colour-swatch${c===selectedColour?' selected':''}" style="background:${COLOUR_HEX[c]||COLOUR_HEX['Default']}" title="${c}" onclick="selectColour('${c.replace(/'/g,"\\'")}')"></span>`).join('');
+  document.getElementById('colour-name-label').textContent=selectedColour||'–';
+}
+function selectColour(c){selectedColour=c;document.getElementById('colour-name-label').textContent=c;document.querySelectorAll('.colour-swatch').forEach(el=>el.classList.toggle('selected',el.title===c));renderModalImage();updateModalPrice();updateAddBtn();}
+function renderSizePicker(){
+  const label=document.getElementById('size-label');
+  label.style.display=currentProduct.sizes.length?'block':'none';
+  document.getElementById('size-grid').innerHTML=currentProduct.sizes.map(s=>`<button class="size-btn" onclick="selectSize('${s.replace(/'/g,"\\'")}')">${s}</button>`).join('');
+}
+function selectSize(s){selectedSize=s;document.querySelectorAll('.size-btn').forEach(b=>b.classList.toggle('selected',b.textContent===s));updateModalPrice();updateAddBtn();}
+function updateModalPrice(){
+  const v=findVariant(currentProduct,selectedColour,selectedSize);
+  document.getElementById('modal-price').textContent=v?`$${v.price.toFixed(2)} USD`:priceLabel(currentProduct);
+}
+function readyToAdd(){
+  const needsSize=currentProduct.sizes.length>0;
+  const needsColour=currentProduct.colours.length>0;
+  return(!needsSize||selectedSize)&&(!needsColour||selectedColour);
+}
+function updateAddBtn(){
+  const btn=document.getElementById('add-btn');
+  const ok=readyToAdd();
+  const v=ok?findVariant(currentProduct,selectedColour,selectedSize):null;
+  btn.disabled=!ok||!v;
+  btn.textContent=!ok?(currentProduct.sizes.length&&!selectedSize?'Select a Size':'Select Options'):(v?'Add to Cart':'Unavailable');
+}
+function changeQty(delta){const el=document.getElementById('qty-val');el.textContent=Math.max(1,parseInt(el.textContent)+delta);}
+function closeModal(){document.getElementById('modal-overlay').classList.remove('open');document.body.style.overflow='';}
+function handleOverlayClick(e){if(e.target===document.getElementById('modal-overlay'))closeModal();}
+
+function addToCart(){
+  if(!currentProduct||!readyToAdd())return;
+  const v=findVariant(currentProduct,selectedColour,selectedSize);
+  if(!v)return;
+  const qty=parseInt(document.getElementById('qty-val').textContent);
+  const key=v.sku||`${currentProduct.name}-${v.colour}-${v.size}`;
+  const existing=cart.find(i=>i.key===key);
+  if(existing){existing.qty+=qty;}
+  else{cart.push({key,qty,sku:v.sku,name:currentProduct.name,price:v.price,colour:v.colour||'',size:v.size||'',img:v.img||currentProduct.mainImg});}
+  saveCart();renderCart();closeModal();openCart();
+}
+function removeFromCart(key){cart=cart.filter(i=>i.key!==key);saveCart();renderCart();}
+function saveCart(){try{localStorage.setItem('sat_cart_v2',JSON.stringify(cart));}catch(e){}}
+function renderCart(){
+  const el=document.getElementById('cart-items');
+  const count=cart.reduce((a,i)=>a+i.qty,0);
+  document.getElementById('cart-count').textContent=count;
+  if(!cart.length){el.innerHTML='<div class="cart-empty">Your cart is empty.<br>Go grab something bold.</div>';document.getElementById('cart-subtotal-val').textContent='$0.00';document.getElementById('checkout-btn').disabled=true;return;}
+  document.getElementById('checkout-btn').disabled=false;
+  const subtotal=cart.reduce((a,i)=>a+i.price*i.qty,0);
+  document.getElementById('cart-subtotal-val').textContent=`$${subtotal.toFixed(2)}`;
+  el.innerHTML=cart.map(i=>`<div class="cart-item"><img class="cart-item-img" src="${i.img}" alt="${i.name}"><div class="cart-item-info"><div class="cart-item-name">${i.name}</div><div class="cart-item-meta">${[i.colour,i.size].filter(Boolean).join(' · ')} · Qty ${i.qty}</div><button class="cart-item-remove" onclick="removeFromCart('${i.key}')">Remove</button></div><div class="cart-item-price">$${(i.price*i.qty).toFixed(2)}</div></div>`).join('');
+}
+function openCart(){renderCart();document.getElementById('cart-overlay').classList.add('open');document.body.style.overflow='hidden';}
+function closeCart(){document.getElementById('cart-overlay').classList.remove('open');document.body.style.overflow='';}
+
+function openShipping(){
+  closeCart();
+  const subtotal=cart.reduce((a,i)=>a+i.price*i.qty,0);
+  document.getElementById('sb-products').textContent=`$${subtotal.toFixed(2)}`;
+  document.getElementById('sb-total').textContent=`$${subtotal.toFixed(2)} USD`;
+  window._checkoutTotal=subtotal;
+  document.getElementById('ship-overlay').classList.add('open');
+  validateCheckout();
+}
+function closeShipping(){document.getElementById('ship-overlay').classList.remove('open');openCart();}
+function validateCheckout(){
+  const emailVal=document.getElementById('email').value||'';
+  const emailOk=emailVal.includes('@')&&emailVal.includes('.');
+  const country=document.getElementById('country-select').value;
+  const firstname=(document.getElementById('ship-firstname').value||'').trim();
+  const address=(document.getElementById('ship-address').value||'').trim();
+  const city=(document.getElementById('ship-city').value||'').trim();
+  const zip=(document.getElementById('ship-zip').value||'').trim();
+  document.getElementById('ship-go-btn').disabled=!(emailOk&&country&&firstname&&address&&city&&zip);
+}
+
+async function proceedToCheckout(){
+  const firstname=(document.getElementById('ship-firstname').value||'').trim();
+  const lastname=(document.getElementById('ship-lastname').value||'').trim();
+  const address=(document.getElementById('ship-address').value||'').trim();
+  const city=(document.getElementById('ship-city').value||'').trim();
+  const state=(document.getElementById('ship-state').value||'').trim();
+  const zip=(document.getElementById('ship-zip').value||'').trim();
+  const phone=(document.getElementById('ship-phone').value||'').trim();
+  const country=document.getElementById('country-select').value;
+  const email=document.getElementById('email').value||'';
+  const orderItems=cart.map(i=>`${i.name} (${[i.colour,i.size].filter(Boolean).join(', ')}) x${i.qty}`).join('; ');
+  const orderItemsDetailed=cart.map(i=>`${i.name} | ${[i.colour,i.size].filter(Boolean).join(' / ')} | Qty ${i.qty} | $${i.price.toFixed(2)} | SKU ${i.sku}`).join('\n');
+  const orderId='SAT-'+Date.now();
+  const orderDate=new Date().toISOString().split('T')[0];
+  if(typeof window.__processDonation!=='function'){alert('Checkout is temporarily unavailable. Please try again shortly.');return;}
+  const btn=document.getElementById('ship-go-btn');
+  btn.textContent='Redirecting…';btn.disabled=true;
+  try{
+    const capture=fetch(WEBHOOK_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      keepalive:true,
+      body:JSON.stringify({
+        contactEmail:email,
+        contactName:firstname+' '+lastname,
+        data:{
+          order_id:orderId,order_date:orderDate,
+          customer_first_name:firstname,customer_last_name:lastname,
+          order_items:orderItems,
+          order_items_detailed:orderItemsDetailed,
+          order_subtotal:'$'+window._checkoutTotal.toFixed(2),
+          order_shipping:'FREE',
+          order_total_formatted:'$'+window._checkoutTotal.toFixed(2)+' USD',
+          shipping_street:address,shipping_city:city,shipping_state:state,
+          shipping_zip:zip,shipping_country:country,shipping_phone:phone
+        }
+      })
+    });
+    await Promise.race([capture,new Promise(r=>setTimeout(r,4000))]).catch(()=>{});
+  }catch(e){console.warn('[SAT] order capture webhook issue (non-blocking):',e);}
+  let desc='Order '+orderId+' | '+orderItems+' | '+firstname+' '+lastname+' | '+address+', '+city+(state?', '+state:'')+', '+zip+', '+country;
+  if(desc.length>480)desc=desc.substring(0,477)+'...';
+  try{
+    console.log('[SAT] calling __processDonation, total:',window._checkoutTotal);
+    await window.__processDonation({amount:window._checkoutTotal,email:email||undefined,description:desc});
+  }catch(e){
+    console.error('[SAT] __processDonation error:',e);
+    btn.textContent='Pay Now — Free Shipping';btn.disabled=false;
+    alert('Payment could not start: '+(e&&e.message?e.message:'unknown error')+'. Please try again.');
+  }
+}
+
+async function loadProducts(){
+  const grid=document.getElementById('grid');
+  grid.innerHTML=Array(6).fill(0).map(()=>`<div class="card" style="pointer-events:none"><div class="card-img-wrap"><div class="skeleton" style="width:100%;height:100%"></div></div><div class="card-info"><div class="skeleton" style="height:14px;width:70%;margin-bottom:8px"></div><div class="skeleton" style="height:12px;width:40%"></div></div></div>`).join('');
+  try{
+    const res=await fetch(SHEET_URL);const data=await res.json();
+    const rows=data.rows||data.data||data||[];
+    products=groupRows(rows);
+    buildFilters();renderGrid();renderCart();
+  }catch(e){
+    grid.innerHTML='<div style="padding:3rem;color:var(--white-dimmer);font-size:0.75rem;grid-column:1/-1;font-family:\'Space Mono\',monospace">Could not load products. Please refresh.</div>';
+    document.getElementById('products-count').textContent='—';
+  }
+}
+loadProducts();
+</script>
+</body>
+</html>
