@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://smartrbotsmere-rgb.github.io/snark-a-tects/feedback/</loc>
-    <lastmod>2026-07-13T15:45:07.212Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://smartrbotsmere-rgb.github.io/snark-a-tects/</loc>
-    <lastmod>2026-07-13T15:44:36.726Z</lastmod>
+    <lastmod>2026-07-22T14:38:25.315Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://smartrbotsmere-rgb.github.io/snark-a-tects/beta/</loc>
-    <lastmod>2026-07-13T15:39:54.443Z</lastmod>
+    <lastmod>2026-07-18T20:15:53.066Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://smartrbotsmere-rgb.github.io/snark-a-tects/feedback/</loc>
+    <lastmod>2026-07-17T21:32:23.719Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
