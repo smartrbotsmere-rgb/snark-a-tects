@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://snark-a-tects.com/v4/</loc>
+    <lastmod>2026-07-22T23:19:01.258Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://snark-a-tects.com/</loc>
-    <lastmod>2026-07-22T16:25:08.805Z</lastmod>
+    <lastmod>2026-07-22T23:00:56.085Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
