@@ -4,18 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 
 <!-- SEO Meta Tags -->
-<title>Snark - A - Tects Merch</title>
-<meta property="og:title" content="Snark - A - Tects Merch" />
+<title>Snark-A-Tects — AI Statement Tees · Free Worldwide Shipping</title>
+<meta name="description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful." />
+<meta property="og:title" content="Snark-A-Tects — AI Statement Tees · Free Worldwide Shipping" />
+<meta property="og:description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Snark - A - Tects Merch" />
+<meta name="twitter:title" content="Snark-A-Tects — AI Statement Tees · Free Worldwide Shipping" />
+<meta name="twitter:description" content="Bold AI-era statement tees for people who actually get it. Free worldwide shipping on everything, printed by Printful." />
 <link rel="icon" href="favicon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
@@ -167,7 +170,7 @@
 (function(){
   var slug='gpDSrzn';
   var apiBase='https://paymegpt.com';
-  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  var successSubtext='Thank you for your purchase!';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='https://paymegpt.com/p/gpDSrzn?order=success';
   function findEmail(){
     var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
     for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
@@ -233,7 +236,7 @@
   var apiBase='https://paymegpt.com';
   var currency='USD';
   var minAmt=100;var maxAmt=1000000;
-  var thankYouMsg='Thank you!';var successSubtext='Your donation has been processed successfully.';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  var thankYouMsg='Thank you!';var successSubtext='Thank you for your purchase!';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='https://paymegpt.com/p/gpDSrzn?order=success';
   function getLang(){var l=(document.documentElement.lang||navigator.language||'en').toLowerCase();return l.split('-')[0];}
   function getLocale(){return (document.documentElement.lang||navigator.language||'en');}
   var I18N={en:{min:'Minimum is ',max:'Maximum is ',emailPrompt:'Enter your email for the receipt:',emailRequired:'An email address is required to complete checkout.',failed:'Failed to process donation'},fr:{min:'Le minimum est ',max:'Le maximum est ',emailPrompt:'Entrez votre adresse e-mail pour le reçu :',emailRequired:'Une adresse e-mail est requise pour finaliser le paiement.',failed:'Échec du traitement du don'},es:{min:'El mínimo es ',max:'El máximo es ',emailPrompt:'Introduce tu correo electrónico para el recibo:',emailRequired:'Se requiere una dirección de correo electrónico para completar el pago.',failed:'No se pudo procesar la donación'},pt:{min:'O mínimo é ',max:'O máximo é ',emailPrompt:'Insira seu e-mail para o recibo:',emailRequired:'Um endereço de e-mail é necessário para concluir o pagamento.',failed:'Falha ao processar a doação'},de:{min:'Mindestbetrag ist ',max:'Höchstbetrag ist ',emailPrompt:'Geben Sie Ihre E-Mail-Adresse für die Quittung ein:',emailRequired:'Eine E-Mail-Adresse ist erforderlich, um den Checkout abzuschließen.',failed:'Spende konnte nicht verarbeitet werden'},it:{min:'Il minimo è ',max:'Il massimo è ',emailPrompt:'Inserisci la tua email per la ricevuta:',emailRequired:"È richiesto un indirizzo email per completare il pagamento.",failed:'Impossibile elaborare la donazione'}};
@@ -294,7 +297,7 @@
 (function(){
   var slug='gpDSrzn';
   var apiBase='https://paymegpt.com';
-  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  var successSubtext='Thank you for your purchase!';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='https://paymegpt.com/p/gpDSrzn?order=success';
   function findCartEmail(){
     var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
     for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
@@ -396,14 +399,17 @@
     <div class="sidebar-note">Unisex fit · Ring-spun cotton<br>Printed on-demand via<br>Printful<br><br>★ FREE SHIPPING ★<br>Worldwide · Tracked<br>No fees at checkout</div>
   </aside>
   <div class="products-area">
-    <div class="products-header"><div class="products-label">// All Products</div><div class="products-count" id="products-count">Loading…</div></div>
+    <div class="products-header"><div class="products-label" id="products-label">// All Products</div><div class="products-count" id="products-count">Loading…</div></div>
     <div class="grid" id="grid"></div>
   </div>
 </div>
 <div class="overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-img-col"><img class="modal-img" id="modal-img" src="" alt=""></div>
+    <div class="modal-img-col">
+      <div class="modal-img-main"><img class="modal-img" id="modal-img" src="" alt=""></div>
+      <div class="modal-thumb-row" id="modal-thumb-row"></div>
+    </div>
     <div class="modal-body">
       <div class="modal-tag" id="modal-tag">Apparel</div>
       <h2 class="modal-title" id="modal-title"></h2>
@@ -415,7 +421,25 @@
         <div class="colour-label" id="colour-name-label">–</div>
         <div class="colour-row" id="colour-row"></div>
       </div>
-      <div class="picker-label" id="size-label">Size</div>
+      <div class="picker-label-row">
+        <div class="picker-label" id="size-label">Size</div>
+        <button class="size-guide-toggle" id="size-guide-toggle" onclick="toggleSizeGuide()" style="display:none">Size Guide</button>
+      </div>
+      <div class="size-guide-note" id="size-guide-note">Measurements in inches, laid flat. For a relaxed unisex fit, order your usual size; for a slimmer fit, size down.</div>
+      <table class="size-guide-table" id="size-guide-table">
+        <thead><tr><th>Size</th><th>Chest (in)</th><th>Length (in)</th></tr></thead>
+        <tbody>
+          <tr><td>XS</td><td>32–34</td><td>27</td></tr>
+          <tr><td>S</td><td>35–37</td><td>28</td></tr>
+          <tr><td>M</td><td>38–40</td><td>29</td></tr>
+          <tr><td>L</td><td>41–43</td><td>30</td></tr>
+          <tr><td>XL</td><td>44–46</td><td>31</td></tr>
+          <tr><td>2XL</td><td>47–49</td><td>32</td></tr>
+          <tr><td>3XL</td><td>50–52</td><td>33</td></tr>
+          <tr><td>4XL</td><td>53–55</td><td>34</td></tr>
+          <tr><td>5XL</td><td>56–58</td><td>35</td></tr>
+        </tbody>
+      </table>
       <div class="size-grid" id="size-grid"></div>
       <div class="picker-label">Quantity</div>
       <div class="qty-row">
@@ -474,10 +498,68 @@
   </div>
 </div>
 <footer data-section="footer">
-  <div class="footer-col"><div class="footer-label">Snark-A-Tects</div><div class="footer-text">AI Statement Tees<br>Free Worldwide Shipping<br>© 2026 · All Rights Reserved</div></div>
-  <div class="footer-col"><div class="footer-label">Fulfillment</div><div class="footer-text">Printed by Printful<br>FREE shipping · Tracked worldwide<br>No surprise fees at checkout</div></div>
-  <div class="footer-col"><div class="footer-label">The Vibe</div><div class="footer-text">Made for people who<br>actually understand<br>what's happening.</div></div>
+  <div class="footer-faq">
+    <div class="footer-faq-head">// Frequently Asked Questions</div>
+    <details class="faq-item">
+      <summary>How long does shipping take?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer">Every shirt is printed on demand the moment you order, so production takes about 2–5 business days, then shipping adds another 3–10 business days depending on where you are. You'll get tracking as soon as it ships.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do you ship internationally?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer">Yes — free shipping worldwide, no exceptions, no surprise fees at checkout. The price you see is the price you pay.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What's your return policy?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer">Because every piece is made specifically for you when you order, we can't accept returns for wrong size or change of mind. If your item arrives damaged or misprinted, email us within 14 days and we'll make it right.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What sizes do you carry?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer">Unisex fit from XS through 5XL. Check the size guide on each product for exact chest and length measurements before you order.</div>
+    </details>
+    <details class="faq-item">
+      <summary>How do I contact support?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer">Email support@snark-a-tects.com and we'll get back to you within 1–2 business days.</div>
+    </details>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-col"><div class="footer-label">Snark-A-Tects</div><div class="footer-text">AI Statement Tees<br>Free Worldwide Shipping<br>Printed on-demand<br>© 2026 · All Rights Reserved</div></div>
+    <div class="footer-col">
+      <div class="footer-label">Shop</div>
+      <ul>
+        <li><a href="#top">All Products</a></li>
+        <li><a href="#products">New Drops</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-label">Support</div>
+      <ul>
+        <li><a href="mailto:support@snark-a-tects.com">Contact Us</a></li>
+        <li><a onclick="openPolicy('shipping')">Shipping &amp; Returns</a></li>
+        <li><a onclick="openPolicy('terms')">Terms of Use</a></li>
+        <li><a onclick="openPolicy('privacy')">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-label">Join The Drop List</div>
+      <form class="footer-newsletter-form" onsubmit="handleNewsletterSignup(event)">
+        <input type="email" id="newsletter-email" placeholder="your@email.com" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="footer-newsletter-note">Be first to know about new drops. No spam, unsubscribe anytime.</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-text">© 2026 Snark-A-Tects · All Rights Reserved</div>
+    <div class="footer-bottom-text">Made for people who actually understand what's happening.</div>
+  </div>
 </footer>
+<div class="policy-overlay" id="policy-overlay" onclick="handlePolicyOverlayClick(event)">
+  <div class="policy-modal">
+    <button class="policy-close" onclick="closePolicy()">✕</button>
+    <div class="policy-title" id="policy-title"></div>
+    <div class="policy-body" id="policy-body"></div>
+  </div>
+</div>
 <script>
 const SHEET_URL='https://paymegpt.com/api/public/landing-pages/4373/sheet-data';
 const WEBHOOK_URL='https://paymegpt.com/api/webhooks/flow/3970/3a4bec0dcfc8728f83b67352b9ae1d922caad0fed594fb95b95af5067e97ef3c';
@@ -486,7 +568,50 @@ const SIZE_ORDER=['XS','S','M','L','XL','2XL','3XL','4XL','5XL','2" × 2"','3" �
 const SIZE_TOKENS=new Set(SIZE_ORDER.map(s=>s.toUpperCase()));
 const SKIP_NAMES=['test tshirt','copy of','unisex classic tee copy','test with mockups'];
 let products=[],currentProduct=null,selectedColour=null,selectedSize=null,activeFilter='all';
+let categoryDisplayNames={};
 let cart=JSON.parse(localStorage.getItem('sat_cart_v2')||'[]');
+
+const NEWSLETTER_WEBHOOK_URL='https://paymegpt.com/api/webhooks/flow/4513/5721fe77c9795bd40a378a3e4b49536f51a518b82ea025daabb668ac38de5149';
+const POLICY_CONTENT={
+  shipping:{title:'Shipping & Returns',body:'DRAFT — review before publishing.\n\nSHIPPING\nEvery order ships free, worldwide, with no minimum and no hidden fees at checkout — the price you see at checkout is the price you pay.\n\nEach shirt is printed specifically for you the moment you order, so please allow 2–5 business days for production before it ships. Once it ships, delivery typically takes an additional 3–10 business days depending on your location. You\'ll receive tracking information by email as soon as your order leaves our print partner\'s facility.\n\nRETURNS & EXCHANGES\nBecause every item is made to order just for you, we\'re not able to accept returns or exchanges for wrong size, changed mind, or other preference-based reasons — please double check the size guide before ordering.\n\nIf your item arrives damaged, defective, or printed incorrectly, contact us within 14 days of delivery with a photo of the issue and we\'ll send a free replacement or a full refund, your choice.\n\nREFUNDS\nApproved refunds are issued to your original payment method and typically appear within 5–10 business days, depending on your bank.'},
+  terms:{title:'Terms of Use',body:'DRAFT — review before publishing.\n\nBy placing an order on this site you agree to purchase the item(s) in your cart at the listed price, plus any applicable taxes, with free worldwide shipping included. Prices, designs, and product availability may change at any time without notice.\n\nAll designs, artwork, and branding on this site are the property of Snark-A-Tects and may not be reproduced, redistributed, or used commercially without permission.\n\nOrders are fulfilled on demand by our print partner. Once production has started on an order, it generally cannot be cancelled or modified — contact us as soon as possible if you need to make a change.\n\nWe reserve the right to refuse or cancel any order at our discretion, including in cases of suspected fraud or pricing errors, in which case you\'ll receive a full refund.'},
+  privacy:{title:'Privacy Policy',body:'DRAFT — review before publishing.\n\nWe collect only what\'s needed to process, ship, and support your order: your name, email address, and shipping address. If you sign up for our newsletter, we also store the email you provide for that purpose.\n\nWe never sell your personal information to anyone.\n\nYour order and shipping details are shared with our print-on-demand fulfillment partner solely so they can produce and ship your order, and with our payment processor solely to process your payment securely. We do not share your information with any other third parties for marketing purposes.\n\nYou can ask us to access, correct, or delete your personal data at any time by emailing us — see the Contact link below.'}
+};
+function openPolicy(key){
+  const p=POLICY_CONTENT[key];if(!p)return;
+  document.getElementById('policy-title').textContent=p.title;
+  document.getElementById('policy-body').textContent=p.body;
+  document.getElementById('policy-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePolicy(){document.getElementById('policy-overlay').classList.remove('open');document.body.style.overflow='';}
+function handlePolicyOverlayClick(e){if(e.target===document.getElementById('policy-overlay'))closePolicy();}
+async function handleNewsletterSignup(e){
+  e.preventDefault();
+  const emailInput=document.getElementById('newsletter-email');
+  const email=(emailInput.value||'').trim();
+  if(!email)return;
+  const btn=e.target.querySelector('button[type="submit"]');
+  const originalLabel=btn.textContent;
+  btn.disabled=true;btn.textContent='Signing Up…';
+  try{
+    await fetch(NEWSLETTER_WEBHOOK_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        contactEmail:email,
+        data:{source:'snark-a-tects-v4-footer',signup_date:new Date().toISOString().split('T')[0]}
+      })
+    });
+    btn.textContent='You\'re In! ✦';
+    emailInput.value='';
+    setTimeout(()=>{btn.disabled=false;btn.textContent=originalLabel;},2500);
+  }catch(err){
+    console.warn('[SAT] newsletter signup webhook issue:',err);
+    btn.disabled=false;btn.textContent=originalLabel;
+    alert('Something went wrong signing you up — please try again in a moment.');
+  }
+}
 
 function sortSizes(sizes){return[...sizes].sort((a,b)=>{const ai=SIZE_ORDER.findIndex(s=>s.toUpperCase()===a.toUpperCase());const bi=SIZE_ORDER.findIndex(s=>s.toUpperCase()===b.toUpperCase());if(ai===-1&&bi===-1)return a.localeCompare(b);if(ai===-1)return 1;if(bi===-1)return -1;return ai-bi;});}
 function looksLikeSize(t){return SIZE_TOKENS.has(t.toUpperCase())||/["×x]/.test(t);}
@@ -535,13 +660,20 @@ function priceLabel(p){return p.minPrice===p.maxPrice?`$${p.minPrice.toFixed(2)}
 function renderGrid(){
   const grid=document.getElementById('grid');
   const filtered=activeFilter==='all'?products:products.filter(p=>(p.category||'').toLowerCase()===activeFilter);
-  document.getElementById('products-count').textContent=`${filtered.length} item${filtered.length!==1?'s':''} · Free shipping on everything`;
-  if(!filtered.length){grid.innerHTML='<div style="padding:3rem;color:var(--white-dimmer);font-size:0.75rem;grid-column:1/-1;font-family:\'Space Mono\',monospace">No products found.</div>';return;}
+  const labelEl=document.getElementById('products-label');
+  const countEl=document.getElementById('products-count');
+  labelEl.textContent=activeFilter==='all'?'// All Products':`// ${categoryDisplayNames[activeFilter]||activeFilter}`;
+  countEl.textContent=`${filtered.length} item${filtered.length!==1?'s':''} · Free shipping on everything`;
+  labelEl.classList.remove('pulse');countEl.classList.remove('pulse');
+  void labelEl.offsetWidth;
+  labelEl.classList.add('pulse');countEl.classList.add('pulse');
+  if(!filtered.length){grid.innerHTML='<div style="padding:3rem;color:var(--white-dimmer);font-size:0.75rem;grid-column:1/-1;font-family:\'Space Mono\',monospace">No products found.</div>';grid.classList.remove('grid-fading');return;}
   grid.innerHTML=filtered.map(p=>{
     const pi=products.indexOf(p);
     const pills=p.colours.length>0?`<div class="colour-pills">${p.colours.slice(0,8).map((c,ci)=>`<span class="cpill${ci===0?' active':''}" style="background:${COLOUR_HEX[c]||COLOUR_HEX['Default']}" title="${c}" onclick="event.stopPropagation();cardColour(${pi},${ci},'${c.replace(/'/g,"\\'")}')"></span>`).join('')}</div>`:'';
     return`<div class="card" onclick="openModal(${pi})"><div class="card-img-wrap"><img class="card-img" id="cimg-${pi}" src="${p.mainImg}" alt="${p.name}" loading="lazy"><span class="freeship-badge">Free Ship</span>${pills}<div class="card-overlay"><span class="card-overlay-cta">View Options →</span></div></div><div class="card-info"><div class="card-name">${p.name}</div><div class="card-price">${priceLabel(p)}</div><div class="card-ship">✦ Free worldwide shipping</div></div></div>`;
   }).join('');
+  requestAnimationFrame(()=>grid.classList.remove('grid-fading'));
 }
 function cardColour(pi,ci,c){
   const p=products[pi];
@@ -549,8 +681,17 @@ function cardColour(pi,ci,c){
   if(img&&p.colourImg[c])img.src=p.colourImg[c];
   img.closest('.card-img-wrap').querySelectorAll('.cpill').forEach((el,i)=>el.classList.toggle('active',i===ci));
 }
-function setFilter(val,btn){activeFilter=val;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderGrid();}
-function buildFilters(){const cats=[...new Set(products.map(p=>p.category).filter(Boolean))];const wrap=document.getElementById('filter-btns');cats.forEach(cat=>{const btn=document.createElement('button');btn.className='filter-btn';btn.textContent=cat;btn.onclick=function(){setFilter(cat.toLowerCase(),this);};wrap.appendChild(btn);});}
+function setFilter(val,btn){
+  activeFilter=val;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const grid=document.getElementById('grid');
+  grid.classList.add('grid-fading');
+  const productsArea=document.querySelector('.products-area');
+  if(productsArea&&window.innerWidth<=768){productsArea.scrollIntoView({behavior:'smooth',block:'start'});}
+  setTimeout(renderGrid,160);
+}
+function buildFilters(){const cats=[...new Set(products.map(p=>p.category).filter(Boolean))];const wrap=document.getElementById('filter-btns');cats.forEach(cat=>{categoryDisplayNames[cat.toLowerCase()]=cat;const btn=document.createElement('button');btn.className='filter-btn';btn.textContent=cat;btn.onclick=function(){setFilter(cat.toLowerCase(),this);};wrap.appendChild(btn);});}
 
 function openModal(pi){
   currentProduct=products[pi];
@@ -562,7 +703,10 @@ function openModal(pi){
   document.getElementById('modal-desc').textContent=currentProduct.description||'Bold AI-era statement piece. Printed on demand. Free shipping worldwide.';
   document.getElementById('colour-block').style.display=currentProduct.colours.length?'block':'none';
   document.getElementById('qty-val').textContent='1';
-  renderModalImage();renderColourPicker();renderSizePicker();updateAddBtn();
+  document.getElementById('size-guide-toggle').style.display=currentProduct.sizes.length?'inline':'none';
+  document.getElementById('size-guide-table').classList.remove('open');
+  document.getElementById('size-guide-note').classList.remove('open');
+  renderModalImage();renderThumbRail();renderColourPicker();renderSizePicker();updateAddBtn();
   document.getElementById('modal-overlay').classList.add('open');document.body.style.overflow='hidden';
 }
 function renderModalImage(){
@@ -570,11 +714,31 @@ function renderModalImage(){
   img.src=(selectedColour&&currentProduct.colourImg[selectedColour])||currentProduct.mainImg;
   img.alt=currentProduct.name;
 }
+function renderThumbRail(){
+  const row=document.getElementById('modal-thumb-row');
+  const thumbs=[{colour:null,img:currentProduct.mainImg}].concat(currentProduct.colours.map(c=>({colour:c,img:currentProduct.colourImg[c]}))).filter((t,i,arr)=>t.img&&arr.findIndex(x=>x.img===t.img)===i);
+  if(thumbs.length<=1){row.style.display='none';row.innerHTML='';return;}
+  row.style.display='flex';
+  row.innerHTML=thumbs.map(t=>`<img class="modal-thumb${(t.colour===selectedColour)||(!t.colour&&!selectedColour)?' selected':''}" src="${t.img}" alt="${currentProduct.name}" onclick="thumbClick('${t.colour?t.colour.replace(/'/g,"\\'"):''}')">`).join('');
+}
+function thumbClick(c){
+  if(c&&currentProduct.colours.includes(c)){selectColour(c);}
+  else{
+    document.getElementById('modal-img').src=currentProduct.mainImg;
+    document.querySelectorAll('.modal-thumb').forEach(el=>el.classList.remove('selected'));
+    row_selectFirst();
+  }
+}
+function row_selectFirst(){const row=document.getElementById('modal-thumb-row');const first=row.querySelector('.modal-thumb');if(first)first.classList.add('selected');}
+function toggleSizeGuide(){
+  document.getElementById('size-guide-table').classList.toggle('open');
+  document.getElementById('size-guide-note').classList.toggle('open');
+}
 function renderColourPicker(){
   document.getElementById('colour-row').innerHTML=currentProduct.colours.map(c=>`<span class="colour-swatch${c===selectedColour?' selected':''}" style="background:${COLOUR_HEX[c]||COLOUR_HEX['Default']}" title="${c}" onclick="selectColour('${c.replace(/'/g,"\\'")}')"></span>`).join('');
   document.getElementById('colour-name-label').textContent=selectedColour||'–';
 }
-function selectColour(c){selectedColour=c;document.getElementById('colour-name-label').textContent=c;document.querySelectorAll('.colour-swatch').forEach(el=>el.classList.toggle('selected',el.title===c));renderModalImage();updateModalPrice();updateAddBtn();}
+function selectColour(c){selectedColour=c;document.getElementById('colour-name-label').textContent=c;document.querySelectorAll('.colour-swatch').forEach(el=>el.classList.toggle('selected',el.title===c));renderModalImage();renderThumbRail();updateModalPrice();updateAddBtn();}
 function renderSizePicker(){
   const label=document.getElementById('size-label');
   label.style.display=currentProduct.sizes.length?'block':'none';
@@ -614,6 +778,7 @@ function addToCart(){
 }
 function removeFromCart(key){cart=cart.filter(i=>i.key!==key);saveCart();renderCart();}
 function saveCart(){try{localStorage.setItem('sat_cart_v2',JSON.stringify(cart));}catch(e){}}
+function clearCart(){cart=[];saveCart();renderCart();}
 function renderCart(){
   const el=document.getElementById('cart-items');
   const count=cart.reduce((a,i)=>a+i.qty,0);
@@ -660,6 +825,7 @@ async function proceedToCheckout(){
   const email=document.getElementById('email').value||'';
   const orderItems=cart.map(i=>`${i.name} (${[i.colour,i.size].filter(Boolean).join(', ')}) x${i.qty}`).join('; ');
   const orderItemsDetailed=cart.map(i=>`${i.name} | ${[i.colour,i.size].filter(Boolean).join(' / ')} | Qty ${i.qty} | $${i.price.toFixed(2)} | SKU ${i.sku}`).join('\n');
+  const orderItemsJson=JSON.stringify(cart.map(i=>({external_variant_id:i.sku,quantity:i.qty})));
   const orderId='SAT-'+Date.now();
   const orderDate=new Date().toISOString().split('T')[0];
   if(typeof window.__processDonation!=='function'){alert('Checkout is temporarily unavailable. Please try again shortly.');return;}
@@ -678,6 +844,7 @@ async function proceedToCheckout(){
           customer_first_name:firstname,customer_last_name:lastname,
           order_items:orderItems,
           order_items_detailed:orderItemsDetailed,
+          order_items_json:orderItemsJson,
           order_subtotal:'$'+window._checkoutTotal.toFixed(2),
           order_shipping:'FREE',
           order_total_formatted:'$'+window._checkoutTotal.toFixed(2)+' USD',
@@ -691,13 +858,33 @@ async function proceedToCheckout(){
   let desc='Order '+orderId+' | '+orderItems+' | '+firstname+' '+lastname+' | '+address+', '+city+(state?', '+state:'')+', '+zip+', '+country;
   if(desc.length>480)desc=desc.substring(0,477)+'...';
   try{
+    sessionStorage.setItem('sat_pending_clear','1');
+  }catch(e){}
+  try{
     console.log('[SAT] calling __processDonation, total:',window._checkoutTotal);
+    sessionStorage.setItem('sat_pending_clear','1');
     await window.__processDonation({amount:window._checkoutTotal,email:email||undefined,description:desc});
   }catch(e){
     console.error('[SAT] __processDonation error:',e);
+    sessionStorage.removeItem('sat_pending_clear');
     btn.textContent='Pay Now — Free Shipping';btn.disabled=false;
     alert('Payment could not start: '+(e&&e.message?e.message:'unknown error')+'. Please try again.');
   }
+}
+
+function checkOrderSuccess(){
+  try{
+    const params=new URLSearchParams(window.location.search);
+    const isSuccess=params.get('order')==='success'||params.has('donation_success')||params.get('payment')==='success';
+    const pending=sessionStorage.getItem('sat_pending_clear')==='1';
+    if(isSuccess&&pending){
+      clearCart();
+      sessionStorage.removeItem('sat_pending_clear');
+      params.delete('order');params.delete('donation_success');params.delete('payment');
+      const cleanUrl=window.location.pathname+(params.toString()?'?'+params.toString():'')+window.location.hash;
+      window.history.replaceState({},document.title,cleanUrl);
+    }
+  }catch(e){console.warn('[SAT] checkOrderSuccess error:',e);}
 }
 
 async function loadProducts(){
@@ -713,6 +900,7 @@ async function loadProducts(){
     document.getElementById('products-count').textContent='—';
   }
 }
+checkOrderSuccess();
 loadProducts();
 </script>
 </body>
